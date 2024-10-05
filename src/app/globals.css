@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background-color: rgb(30, 30, 46);
+  color: rgb(205, 214, 244)
+}
+
+#typingBox {
+  border-color: rgb(137, 180, 250);
+  border-width: thick;
+}
+
+
+#startButton {
+  background-color: rgb(203, 166, 247);
+  color: rgb(17, 17, 27);
+  font-size: 15
+}
+
+
+color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
